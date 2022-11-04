@@ -1,0 +1,34 @@
+@use "base/base";
+@use "components/menu";
+@use "pages/info";
+@use "pages/premium";
+@use "layout";
+@use "abstract/variables" as vars;
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    z-index: 100;
+}
+
+.link {
+    text-align: center;
+    .main-link {
+        color: vars.$white;
+        padding: 15px 35px;
+        background: vars.$bg-gradient;
+        border-radius: 40px;
+        display: inline-block;
+        font: {
+            size: 24px;
+            weight: 700;
+            family: 'Comfortaa' cursive;
+        }
+    }
+}

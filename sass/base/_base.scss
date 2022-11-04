@@ -1,0 +1,17 @@
+@use "../abstract/mixins";
+@use "../abstract/variables" as vars;
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}

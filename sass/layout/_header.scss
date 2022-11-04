@@ -1,0 +1,245 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+@use "../base/base";
+
+
+header {
+    background: url(../../image/BG-home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        color: vars.$white;
+        font: {
+            size: 36px;
+            weight: 700;
+            family: 'Comfortaa', cursive;
+        }
+    }
+    &__list, &__login {
+        display: none;
+        list-style: none;
+    }
+    &__item {
+        margin-right: 30px;
+        transition: all 0.3s ease-in;
+        a {
+            color: vars.$white;
+            text-transform: uppercase;
+            font: {
+                size: 20px;
+                weight: 700;
+                family: 'Comfortaa', cursive;
+            }
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+        &-login {
+            a {
+                font: {
+                    size: 14px;
+                }
+            }
+            &:last-child a {
+                padding: 16px 32px;
+                background-color: vars.$white;
+                border-radius: 35px;
+                color: #BB6DF3;
+                &:hover {
+                    transform: scale(1.4);
+                }
+            }  
+        }
+    }
+    &__bars {
+        display: inline-block;
+        &-list {
+            &.hidden {
+                display: none;
+            }
+            position: absolute;
+            background: linear-gradient(45deg, rgb(29, 24, 103), rgb(69, 63, 63));
+            padding: 20px;
+            right: 0;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 50px;
+            z-index: 1000;
+        }
+        &-item {
+            list-style: none;
+            a {
+                color: vars.$white;
+                text-transform: uppercase;
+                transition: all .6s ease-in;
+                font: {
+                    size: 20px;
+                    weight: 700;
+                    family: 'Comfortaa', cursive;
+                }
+                &:hover {
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+}
+
+.bars-button {
+    background: transparent;
+    border: 0;
+    color: vars.$white;
+    transform: scale(1.4);
+    transition: all .5s ease-in;
+    outline: 0;
+    &:hover {
+        transform: scale(1.9);
+    }
+}
+
+.home {
+    display: flex;
+    flex-direction: column-reverse;
+    &__content {
+        margin-top: 40px;
+        width: 100%;
+        z-index: 5;
+        h1 {
+            text-align: center;
+            color: vars.$heading-color;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            line-height: 70px;
+            font: {
+                size: 56px;
+                weight: 900;
+                family: 'Roboto', sans-serif;
+            }
+        }
+        h4 {
+            color: vars.$heading-color;
+            letter-spacing: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font: {
+                size: 24px;
+                weight: 400;
+                family: 'Montserrat', sans-serif;
+            }
+        }
+        hr {
+            background-color: vars.$heading-color;
+            border-color: vars.$heading-color;
+        }
+        h3 {
+            text-transform: uppercase;
+            color: vars.$heading-color;
+            font: {
+                size: 26px;
+                weight: 500;
+                family: 'Roboto', sans-serif;
+            }
+        }
+        p {
+            color: vars.$p-color;
+            line-height: 28px;
+            letter-spacing: 0.075em;
+            font: {
+                size: 18px;
+                weight: 400;
+                family: 'Montserrat', sans-serif;
+            }
+        }
+        div {
+            text-align: center;
+        }
+        a {
+            color: vars.$white;
+            display: inline-block;
+            padding: 26px 60px;
+            background: linear-gradient(to right, #5AC4FF 0%, #B250FF 50%, #5AC4FF 100%);
+            background-size: 200% auto;
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 62px;
+            transition: all .3s ease;
+            font: {
+                size: 24px;
+                weight: 700;
+                family: 'Comfortaa', cursive;
+            }
+            &:hover {
+                box-shadow: none;
+                background-position: right center;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        position: static;
+        img {
+            width: 100%;
+            position: static;
+            z-index: 1;
+        }
+    }
+}
+
+
+@include mixins.media-md {
+
+    .navbar {
+        &__list, &__login {
+            display: flex;
+        }
+        
+        &__bars {
+            display: none;
+        }
+    }
+
+    .home {
+        flex-direction: row;
+        &__content {
+            width: 585px;
+            h1 {
+                text-align: left;
+                font-size: 72px;
+            }
+            h4 {
+                letter-spacing: 23px;
+                width: 100%;
+                text-align: left;
+            }
+            div {
+                text-align: left;
+            }
+        }
+        &__img {
+            width: auto;
+            position: relative;
+            img {
+                width: auto;
+                position: absolute;
+                right: -700px;
+            }
+        }
+    }
+
+}

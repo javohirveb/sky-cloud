@@ -1,0 +1,78 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+@use "../base/base";
+
+.premium {
+    margin-top: 100px;
+    h1 {
+        letter-spacing: 0.285em;
+        color: vars.$heading-color;
+        text-transform: uppercase;
+        text-align: center;
+        font: {
+            size: 62px;
+            weight: 300;
+            family: 'Roboto', sans-serif;
+        }
+    }
+    h3 {
+        color: vars.$heading-color;
+        line-height: 37px;
+        text-align: center;
+        font: {
+            size: 20px;
+            weight: 400;
+            family: 'Montserrat', sans-serif;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__item {
+        padding: 30px;
+        list-style: none;
+        h4 {
+            color: vars.$heading-color;
+            text-align: center;
+            font: {
+                size: 30px;
+                weight: 700;
+                family: 'Comfortaa', cursive;
+            }
+        }
+        h2 {
+            color: vars.$p-color;
+            text-align: center;
+            margin-bottom: 130px;
+            font: {
+                size: 46px;
+                weight: 400;
+                family: 'Comfortaa', cursive;
+            }
+        }
+        &-ul {
+            display: flex;
+            margin-top: 60px;
+            .left-list {
+                li {
+                    list-style: none;
+                    margin-top: 15px;
+                    color: vars.$p-color;
+                    font: {
+                        size: 20px;
+                        weight: 400;
+                        family: 'Comfortaa', cursive;
+                    }
+                    
+                }
+            }
+            .right-list {
+                list-style: none;
+                li {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
