@@ -1,5 +1,5 @@
 @mixin media-sm {
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 400px) {
         @content;
     }
 }

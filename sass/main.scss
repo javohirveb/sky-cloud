@@ -25,10 +25,14 @@
         background: vars.$bg-gradient;
         border-radius: 40px;
         display: inline-block;
+        transition: all 0.6s ease;
         font: {
-            size: 24px;
+            size: 20px;
             weight: 700;
-            family: 'Comfortaa' cursive;
+            family: 'Comfortaa', cursive;
+        }
+        &:hover {
+            letter-spacing: 3px;
         }
     }
 }

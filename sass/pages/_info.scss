@@ -25,6 +25,7 @@
     &__item {
         display: flex;  
         &-img {
+            display: none;
             position: relative;
             margin-right: 20px;
             &1 {
@@ -64,6 +65,22 @@
     .info {
         &__img {
             display: inline-block;
+        }
+        
+    }
+
+}
+
+
+
+@include mixins.media-sm {
+
+    .info {
+        
+        &__item {
+            &-img {
+                display: inline-block;
+            }
         }
     }
 
