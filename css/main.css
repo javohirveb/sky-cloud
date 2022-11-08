@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
+  font-family: "Comfortaa", cursive;
 }
 
 a {
@@ -106,7 +107,6 @@ a {
   margin-top: 35px;
   font-size: 14px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .premium__list .days-90 .link {
   margin-top: 20px;
@@ -129,7 +129,6 @@ a {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .premium__item h2 {
   color: #2B4964;
@@ -137,7 +136,6 @@ a {
   margin-bottom: 100px;
   font-size: 46px;
   font-weight: 400;
-  font-family: "Comfortaa", cursive;
 }
 .premium__item-ul {
   display: flex;
@@ -149,7 +147,6 @@ a {
   color: #2B4964;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Comfortaa", cursive;
 }
 .premium__item-ul .right-list {
   list-style: none;
@@ -177,6 +174,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  padding-left: 0;
 }
 .download__item {
   display: flex;
@@ -191,13 +189,11 @@ a {
   color: #2B4964;
   font-size: 30px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .download__content p {
   color: #2B4964;
   font-size: 12px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 
 .footer {
@@ -225,13 +221,12 @@ a {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .footer__item p {
   color: #fff;
+  line-height: 30px;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Comfortaa", cursive;
 }
 .footer__item p a {
   color: #fff;
@@ -248,7 +243,6 @@ a {
   padding: 40px 0;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Comfortaa", cursive;
 }
 .footer .copyright a {
   text-decoration: underline;
@@ -309,7 +303,115 @@ a {
     width: 30%;
   }
 }
-header {
+.header {
+  background: url(../../image/BG\ \(5\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.drop {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.drop__heading {
+  color: #3B668D;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+.drop__parag {
+  color: #2B4964;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+.drop__form {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.drop__form label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.drop__form input, .drop__form textarea {
+  width: 100%;
+  margin-left: 20px;
+  padding: 30px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #F3F3F3;
+  font-size: 14px;
+  transition: all 0.6s ease;
+}
+.drop__form input:focus, .drop__form textarea:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(75, 73, 73, 0.5);
+}
+.drop__form textarea {
+  margin-left: 0;
+  margin-top: 30px;
+  resize: none;
+  font-size: 14px;
+}
+.drop__submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.drop__submit p {
+  color: #ADADAD;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 700px) {
+  iframe {
+    height: 800px;
+  }
+  .drop {
+    background: url(../../image/BG\ \(6\).png);
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .drop__heading {
+    font-size: 70px;
+  }
+  .drop__parag {
+    font-size: 20px;
+  }
+  .drop__form label {
+    font-size: 20px;
+  }
+  .drop__form input, .drop__form textarea {
+    font-size: 20px;
+  }
+  .drop__form textarea {
+    font-size: 20px;
+  }
+  .drop__submit p {
+    font-size: 18px;
+  }
+}
+.main-bg, header {
   background: url(../../image/BG-home.png);
   background-position: center;
   background-size: cover;
@@ -331,7 +433,6 @@ header {
   color: #fff;
   font-size: 36px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .navbar__list, .navbar__login {
   display: none;
@@ -346,7 +447,6 @@ header {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .navbar__item:hover {
   transform: scale(1.1);
@@ -392,7 +492,6 @@ header {
   transition: all 0.6s ease-in;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .navbar__bars-item a:hover {
   letter-spacing: 3px;
@@ -471,7 +570,6 @@ header {
   transition: all 0.3s ease;
   font-size: 24px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .home__content a:hover {
   box-shadow: none;
@@ -569,14 +667,47 @@ header {
   padding: 15px 35px;
   background: linear-gradient(90deg, #43A1D6 0%, #907EFF 100%);
   border-radius: 40px;
+  border: 0;
   display: inline-block;
   transition: all 0.6s ease;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
-  font-family: "Comfortaa", cursive;
 }
 .link .main-link:hover {
-  letter-spacing: 3px;
+  transform: scale(1.1);
+}
+
+.main-title {
+  color: #3B668D;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.405em;
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+.main-subtitle {
+  color: #3B668D;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.905em;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+  .link .main-link {
+    font-size: 20px;
+  }
+  .main-title {
+    font-size: 66px;
+  }
+  .main-subtitle {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

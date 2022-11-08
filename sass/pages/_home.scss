@@ -100,7 +100,6 @@
                 font: {
                     size: 14px;
                     weight: 700;
-                    family: 'Comfortaa', cursive;
                 }
             }
             .link {
@@ -130,7 +129,6 @@
             font: {
                 size: 30px;
                 weight: 700;
-                family: 'Comfortaa', cursive;
             }
         }
         h2 {
@@ -140,7 +138,6 @@
             font: {
                 size: 46px;
                 weight: 400;
-                family: 'Comfortaa', cursive;
             }
         }
         &-ul {
@@ -154,7 +151,6 @@
                     font: {
                         size: 16px;
                         weight: 400;
-                        family: 'Comfortaa', cursive;
                     }
                     
                 }
@@ -187,6 +183,7 @@
         flex-direction: column;
         align-items: center;
         gap: 50px;
+        padding-left: 0;
     }
     &__item {
         display: flex;
@@ -203,7 +200,6 @@
             font: {
                 size: 30px;
                 weight: 700;
-                family: 'Comfortaa', cursive;
             }
         }
         p {
@@ -211,7 +207,6 @@
             font: {
                 size: 12px;
                 weight: 700;
-                family: 'Comfortaa', cursive;
             }
 
         }
@@ -245,15 +240,14 @@
             font: {
                 size: 40px;
                 weight: 700;
-                family: 'Comfortaa', cursive;
             }
         }
         p {
             color: vars.$white;
+            line-height: 30px;
             font: {
                 size: 18px;
                 weight: 400;
-                family: 'Comfortaa', cursive;
             }
             a {
                 color: vars.$white;
@@ -273,7 +267,6 @@
         font: {
             size: 18px;
             weight: 400;
-            family: 'Comfortaa', cursive;
         }
         a {
             text-decoration: underline;

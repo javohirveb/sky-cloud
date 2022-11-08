@@ -1,8 +1,10 @@
 @use "base/base";
 @use "components/menu";
 @use "pages/home";
+@use "pages/contact";
 @use "layout";
 @use "abstract/variables" as vars;
+@use "abstract/mixins";
 
 
 .overlay {
@@ -23,15 +25,66 @@
         padding: 15px 35px;
         background: vars.$bg-gradient;
         border-radius: 40px;
+        border: 0;
         display: inline-block;
         transition: all 0.6s ease;
         font: {
-            size: 20px;
+            size: 15px;
             weight: 700;
-            family: 'Comfortaa', cursive;
         }
         &:hover {
-            letter-spacing: 3px;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.main {
+    &-title {
+        color: vars.$heading-color;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.405em;
+        font: {
+            size: 36px;
+            weight: 900;
+            family: 'Roboto', sans-serif;
+        }
+    }
+    &-subtitle {
+        color: vars.$heading-color;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.905em;
+        margin-top: 0;
+        margin-bottom: 60px;
+        font: {
+            size: 10px;
+            weight: 400;
+            family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+@include mixins.media-md {
+
+    .link {
+        .main-link {
+            font: {
+                size: 20px;
+            }
+        }
+    }
+    
+    .main {
+        &-title {
+            font: {
+                size: 66px;
+            }
+        }
+        &-subtitle {
+            font: {
+                size: 20px;
+            }
         }
     }
 }

@@ -1,0 +1,129 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+@use "../base/base";
+
+
+.header {
+    background: url(../../image/BG\ \(5\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.drop {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__heading {
+        color: vars.$heading-color;
+        text-align: center;
+        margin-bottom: 0;
+        font: {
+            size: 40px;
+            weight: 700;
+        }
+    }
+    &__parag {
+        color: vars.$p-color;
+        text-align: center;
+        font: {
+            size: 12px;
+            weight: 400;
+        }
+    }
+    &__form {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        label {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            font-size: 14px;
+            
+        }
+        input, textarea {
+            width: 100%;
+            margin-left: 20px;
+            padding: 30px;
+            border-radius: 50px;
+            border: 0;
+            background-color: #F3F3F3;
+            font-size: 14px;
+            transition: all 0.6s ease;
+            &:focus {
+                outline: none;
+                transform: scale(1.02);
+                box-shadow: 0 0 40px rgba(75, 73, 73, 0.5);
+            }
+        }
+        textarea {
+            margin-left: 0;
+            margin-top: 30px;
+            resize: none;
+            font-size: 14px;
+        }
+    }
+    &__submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        p {
+            color: #ADADAD;
+            font-size: 12px;
+        }
+    }
+}
+
+@include mixins.media-md {
+
+    iframe {
+        height: 800px;
+    }
+
+    .drop {
+        background: url(../../image/BG\ \(6\).png);
+        padding-top: 150px;
+        padding-bottom: 150px;
+        &__heading {
+            font: {
+                size: 70px;
+            }
+        }
+        &__parag {
+            font: {
+                size: 20px;
+            }
+        }
+        &__form {
+            label {
+                font-size: 20px;
+            }
+            input, textarea {
+                font-size: 20px;
+            }
+            textarea {
+                font-size: 20px;
+            }
+        }
+        &__submit {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    
+}

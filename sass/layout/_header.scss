@@ -3,7 +3,7 @@
 @use "../base/base";
 
 
-header {
+.main-bg, header {
     background: url(../../image/BG-home.png);
     background-position: center;
     background-size: cover;
@@ -25,7 +25,6 @@ header {
         font: {
             size: 36px;
             weight: 700;
-            family: 'Comfortaa', cursive;
         }
     }
     &__list, &__login {
@@ -41,7 +40,6 @@ header {
             font: {
                 size: 20px;
                 weight: 700;
-                family: 'Comfortaa', cursive;
             }
         }
         &:hover {
@@ -92,7 +90,6 @@ header {
                 font: {
                     size: 20px;
                     weight: 700;
-                    family: 'Comfortaa', cursive;
                 }
                 &:hover {
                     letter-spacing: 3px;
@@ -182,7 +179,6 @@ header {
             font: {
                 size: 24px;
                 weight: 700;
-                family: 'Comfortaa', cursive;
             }
             &:hover {
                 box-shadow: none;
