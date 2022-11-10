@@ -88,7 +88,7 @@
                 text-transform: uppercase;
                 transition: all .6s ease-in;
                 font: {
-                    size: 20px;
+                    size: 16px;
                     weight: 700;
                 }
                 &:hover {
@@ -177,7 +177,7 @@
             border-radius: 62px;
             transition: all .3s ease;
             font: {
-                size: 24px;
+                size: 16px;
                 weight: 700;
             }
             &:hover {
@@ -212,6 +212,9 @@
 
     .home {
         flex-direction: row;
+        a {
+            font-size: 26px;
+        }
         &__content {
             width: 585px;
             h1 {

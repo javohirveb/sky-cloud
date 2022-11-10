@@ -1,0 +1,75 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+@use "../base/base";
+
+.faq {
+    background: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+        &__list {
+        max-width: 900px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        margin-top: 100px;
+    }
+    &__item1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: linear-gradient(90deg, #B2E3FF 0%, #DFBFFF 100%);
+        opacity: 0.6;
+        margin-top: 25px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: all .5s ease-in-out;
+        p, .fa-plus, .fa-minus {
+            color: vars.$p-color;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .fa-plus, .fa-minus {
+            cursor: pointer;
+        }
+    }
+    &__item2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: linear-gradient(90deg, #B2E3FF 0%, #DFBFFF 100%);
+        opacity: 1;
+        margin-top: 25px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transition: all .5s ease-in-out;
+        p, .fa-plus, .fa-minus {
+            color: vars.$p-color;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .fa-plus, .fa-minus {
+            cursor: pointer;
+        }
+    }
+    &__content {
+        transition: all .9s ease-in-out;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@include mixins.media-md {
+
+    .faq {
+        background: url(../../image/BG\ \(7\).png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+}

@@ -19,9 +19,6 @@ iframe {
     padding-top: 50px;
     padding-bottom: 50px;
     background: none;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     &__heading {
         color: vars.$heading-color;
         text-align: center;
@@ -96,6 +93,9 @@ iframe {
 
     .drop {
         background: url(../../image/BG\ \(6\).png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
         padding-top: 150px;
         padding-bottom: 150px;
         &__heading {

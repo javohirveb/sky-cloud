@@ -182,7 +182,7 @@ a {
   gap: 35px;
 }
 .download__item .fa-download, .download__item .fa-user-plus {
-  font-size: 65px;
+  font-size: 35px;
   color: #3B668D;
 }
 .download__content h2 {
@@ -206,6 +206,7 @@ a {
 .footer__list {
   display: flex;
   justify-content: space-between;
+  padding-left: 0;
 }
 .footer__list .res-none {
   display: none;
@@ -219,13 +220,13 @@ a {
 }
 .footer__item h2 {
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
 }
 .footer__item p {
   color: #fff;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 400;
 }
 .footer__item p a {
@@ -241,7 +242,7 @@ a {
   color: #fff;
   margin: 0;
   padding: 40px 0;
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 400;
 }
 .footer .copyright a {
@@ -260,6 +261,9 @@ a {
 @media screen and (min-width: 700px) {
   .info__img {
     display: inline-block;
+  }
+  .premium {
+    margin-bottom: 250px;
   }
   .premium h1 {
     font-size: 62px;
@@ -293,6 +297,10 @@ a {
   .download__content p {
     font-size: 20px;
   }
+  .download__item .fa-download, .download__item .fa-user-plus {
+    font-size: 65px;
+    color: #3B668D;
+  }
   .footer {
     margin-top: 250px;
   }
@@ -301,6 +309,15 @@ a {
   }
   .footer__list .res-view {
     width: 30%;
+  }
+  .footer__item h2 {
+    font-size: 40px;
+  }
+  .footer__item p {
+    font-size: 18px;
+  }
+  .footer .copyright {
+    font-size: 18px;
   }
 }
 .header {
@@ -319,9 +336,6 @@ iframe {
   padding-top: 50px;
   padding-bottom: 50px;
   background: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .drop__heading {
   color: #3B668D;
@@ -389,6 +403,9 @@ iframe {
   }
   .drop {
     background: url(../../image/BG\ \(6\).png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -409,6 +426,75 @@ iframe {
   }
   .drop__submit p {
     font-size: 18px;
+  }
+}
+.faq {
+  background: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.faq__list {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  margin-top: 100px;
+}
+.faq__item1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: linear-gradient(90deg, #B2E3FF 0%, #DFBFFF 100%);
+  opacity: 0.6;
+  margin-top: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.faq__item1 p, .faq__item1 .fa-plus, .faq__item1 .fa-minus {
+  color: #2B4964;
+  font-size: 24px;
+  font-weight: 700;
+}
+.faq__item1 .fa-plus, .faq__item1 .fa-minus {
+  cursor: pointer;
+}
+.faq__item2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: linear-gradient(90deg, #B2E3FF 0%, #DFBFFF 100%);
+  opacity: 1;
+  margin-top: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.faq__item2 p, .faq__item2 .fa-plus, .faq__item2 .fa-minus {
+  color: #2B4964;
+  font-size: 24px;
+  font-weight: 700;
+}
+.faq__item2 .fa-plus, .faq__item2 .fa-minus {
+  cursor: pointer;
+}
+.faq__content {
+  transition: all 0.9s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .faq {
+    background: url(../../image/BG\ \(7\).png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 .main-bg, header {
@@ -490,7 +576,7 @@ iframe {
   color: #fff;
   text-transform: uppercase;
   transition: all 0.6s ease-in;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
 }
 .navbar__bars-item a:hover {
@@ -568,7 +654,7 @@ iframe {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   border-radius: 62px;
   transition: all 0.3s ease;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
 }
 .home__content a:hover {
@@ -594,6 +680,9 @@ iframe {
   }
   .home {
     flex-direction: row;
+  }
+  .home a {
+    font-size: 26px;
   }
   .home__content {
     width: 585px;
