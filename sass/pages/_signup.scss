@@ -1,0 +1,79 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+@use "../base/base";
+
+.signup {
+    &__form {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        label {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        input {
+            width: 100%;
+            margin-left: 20px;
+            padding: 30px;
+            border-radius: 50px;
+            border: 0;
+            background-color: #F3F3F3;
+            font-size: 14px;
+            transition: all 0.6s ease;
+            &:focus {
+                outline: none;
+                transform: scale(1.02);
+                box-shadow: 0 0 40px rgba(75, 73, 73, 0.5);
+            }
+        }
+        .link {
+            margin-top: 30px;
+        }
+        .forget-password {
+            text-align: center;
+            margin-top: 20px;
+            a {
+                display: inline-block;
+                color: #ADADAD;
+                transition: all 0.6s ease;
+                &:hover {
+                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.37);
+                }
+            }
+        }
+    }
+}
+
+@include mixins.media-md {
+
+    .signup {
+        background: url(../../image/BG\ \(7\).png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 250px;
+        &__form {
+            max-width: 700px;
+            padding-bottom: 150px;
+            label {
+                font-size: 20px;
+                flex-direction: row;
+            }
+            input, textarea {
+                font-size: 20px;
+            }
+            textarea {
+                font-size: 20px;
+            }
+            input {
+                width: 500px;
+            }
+        }
+    }
+
+}

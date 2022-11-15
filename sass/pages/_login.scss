@@ -1,0 +1,23 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+@use "../base/base";
+
+
+.login {
+    &__img {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        img {
+            transform: scale(0.8);
+        }
+    }
+}
+
+@include mixins.media-md {
+    .login {
+        &__img {
+            justify-content: space-evenly;
+        }
+    }
+}

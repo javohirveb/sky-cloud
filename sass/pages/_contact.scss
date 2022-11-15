@@ -49,7 +49,6 @@ iframe {
             align-items: center;
             margin-top: 30px;
             font-size: 14px;
-            
         }
         input, textarea {
             width: 100%;
@@ -77,6 +76,7 @@ iframe {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
         margin-top: 30px;
         p {
             color: #ADADAD;
@@ -120,6 +120,7 @@ iframe {
             }
         }
         &__submit {
+            flex-direction: row;
             p {
                 font-size: 18px;
             }
