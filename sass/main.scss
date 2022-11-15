@@ -23,6 +23,7 @@
 
 .link {
     text-align: center;
+
     .main-link {
         color: vars.$white;
         padding: 15px 35px;
@@ -31,10 +32,12 @@
         border: 0;
         display: inline-block;
         transition: all 0.6s ease;
+
         font: {
             size: 15px;
             weight: 700;
         }
+
         &:hover {
             transform: scale(1.1);
         }
@@ -47,12 +50,14 @@
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 0.405em;
+
         font: {
             size: 36px;
             weight: 900;
             family: 'Roboto', sans-serif;
         }
     }
+
     &-subtitle {
         color: vars.$heading-color;
         text-transform: uppercase;
@@ -60,6 +65,7 @@
         letter-spacing: 0.905em;
         margin-top: 0;
         margin-bottom: 60px;
+
         font: {
             size: 10px;
             weight: 400;
@@ -77,13 +83,14 @@
             }
         }
     }
-    
+
     .main {
         &-title {
             font: {
                 size: 66px;
             }
         }
+
         &-subtitle {
             font: {
                 size: 20px;

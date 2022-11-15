@@ -181,7 +181,8 @@ a {
   align-items: center;
   gap: 35px;
 }
-.download__item .fa-download, .download__item .fa-user-plus {
+.download__item .fa-download,
+.download__item .fa-user-plus {
   font-size: 35px;
   color: #3B668D;
 }
@@ -217,7 +218,8 @@ a {
   .premium__list {
     justify-content: space-between;
   }
-  .premium__list .days-30, .premium__list .days-360 {
+  .premium__list .days-30,
+.premium__list .days-360 {
     display: inline-block;
   }
   .premium__list .days-90 {
@@ -240,7 +242,8 @@ a {
   .download__content p {
     font-size: 20px;
   }
-  .download__item .fa-download, .download__item .fa-user-plus {
+  .download__item .fa-download,
+.download__item .fa-user-plus {
     font-size: 65px;
     color: #3B668D;
   }
@@ -290,7 +293,8 @@ iframe {
   margin-top: 30px;
   font-size: 14px;
 }
-.drop__form input, .drop__form textarea {
+.drop__form input,
+.drop__form textarea {
   width: 100%;
   margin-left: 20px;
   padding: 30px;
@@ -300,7 +304,8 @@ iframe {
   font-size: 14px;
   transition: all 0.6s ease;
 }
-.drop__form input:focus, .drop__form textarea:focus {
+.drop__form input:focus,
+.drop__form textarea:focus {
   outline: none;
   transform: scale(1.02);
   box-shadow: 0 0 40px rgba(75, 73, 73, 0.5);
@@ -344,7 +349,8 @@ iframe {
   .drop__form label {
     font-size: 20px;
   }
-  .drop__form input, .drop__form textarea {
+  .drop__form input,
+.drop__form textarea {
     font-size: 20px;
   }
   .drop__form textarea {
@@ -383,12 +389,15 @@ iframe {
   border-bottom-right-radius: 20px;
   transition: all 0.5s ease-in-out;
 }
-.faq__item1 p, .faq__item1 .fa-plus, .faq__item1 .fa-minus {
+.faq__item1 p,
+.faq__item1 .fa-plus,
+.faq__item1 .fa-minus {
   color: #2B4964;
   font-size: 24px;
   font-weight: 700;
 }
-.faq__item1 .fa-plus, .faq__item1 .fa-minus {
+.faq__item1 .fa-plus,
+.faq__item1 .fa-minus {
   cursor: pointer;
 }
 .faq__item2 {
@@ -404,12 +413,15 @@ iframe {
   border-top-right-radius: 20px;
   transition: all 0.5s ease-in-out;
 }
-.faq__item2 p, .faq__item2 .fa-plus, .faq__item2 .fa-minus {
+.faq__item2 p,
+.faq__item2 .fa-plus,
+.faq__item2 .fa-minus {
   color: #2B4964;
   font-size: 24px;
   font-weight: 700;
 }
-.faq__item2 .fa-plus, .faq__item2 .fa-minus {
+.faq__item2 .fa-plus,
+.faq__item2 .fa-minus {
   cursor: pointer;
 }
 .faq__content {
@@ -487,7 +499,8 @@ iframe {
     font-size: 20px;
     flex-direction: row;
   }
-  .signup__form input, .signup__form textarea {
+  .signup__form input,
+.signup__form textarea {
     font-size: 20px;
   }
   .signup__form textarea {
@@ -511,7 +524,8 @@ iframe {
     justify-content: space-evenly;
   }
 }
-.main-bg, header {
+.main-bg,
+header {
   background: url(../../image/BG-home.png);
   background-position: center;
   background-size: cover;
